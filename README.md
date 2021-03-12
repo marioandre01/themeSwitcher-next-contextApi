@@ -21,7 +21,7 @@
 
 ## 💻 Projeto
 
-Este projeto foi desenvolvido para entender e praticar como fazer um **themeSwitcher** em uma aplicação **React** com **NextJS** usando **styled-components** e **context API**. O conhecimento foi adquirido através do vídeo [Theme Switcher com ReactJS e nova Context API](Theme Switcher com ReactJS e nova Context API) do canal da **Rocketseat** no Youtube, orientado pelo instrutor **Diego Fernandes**
+Este projeto foi desenvolvido para entender e praticar como fazer um **themeSwitcher** em uma aplicação **React** com **NextJS** usando **styled-components** e **context API**. O conhecimento foi adquirido através do vídeo [Theme Switcher com ReactJS e nova Context API](https://www.youtube.com/watch?v=oDgxUodLwGU) do canal da **Rocketseat** no Youtube, orientado pelo instrutor **Diego Fernandes**
 
 
 ## 📋 Tecnologias
