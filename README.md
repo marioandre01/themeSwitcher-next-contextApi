@@ -91,7 +91,7 @@ Notou-se que a inserir o uso de styled-components ao projeto surgiu uma mensagem
 
 1 - Instalar o seguinte pluguin
 ```bash
-yarn add "babel-plugin-styled-components"
+yarn add "babel-plugin-styled-components" -D
 ```
 
 2 - Criar o arquivo **.babelrc** na raiz do projeto e adicionar e salvar o seguinte conteúdo
