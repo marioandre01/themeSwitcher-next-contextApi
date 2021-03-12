@@ -80,14 +80,14 @@ $ npm run dev
 ```
 Agora acesse **localhost:3000** no seu navegador.
 
-## :warning: Erro "React server mismatches: Prop `className` did not match" no uso de styled-componets com o Next
+## :warning: Erro "React server mismatches: Prop className did not match" no uso de styled-componets com o Next
 
 Durante o desenvolvimento do projeto que foi criado com o comando:
 
 ```bash
 yarn create next-app themeswitcher-next-contextapi
 ```
-Notou-se que a inserir o uso de styled-components ao projeto surgiu uma mensagem de **Warnning** no console do navegador com a mensagem **"Warning: Prop `className` did not match"** que pelo que se pesquisou, está relatando que o **className** gerado no lado do servidor do Next está diferente do **className** que é gerado no lado do front. Na prática ao executar o app o mesmo funciona normalmente, mas quando no código é feita alguma alteração e salvo isso, o app perde as propriedades CSS, ficando só o HTML, e a mensagem citada aparece no console. Para resolver isso a solução inicial encontrada foi parar o app e executar novamente. Como esse processo não é muito prático, foi encontrado uma solução através desse [Link](https://github.com/vercel/next.js/issues/11600#issuecomment-745165507). Com isso deve-se seguir os seguintes passos:
+Notou-se que a inserir o uso de styled-components ao projeto surgiu uma mensagem de **Warnning** no console do navegador com a mensagem **"Warning: Prop className did not match"** que pelo que se pesquisou, está relatando que o **className** gerado no lado do servidor do Next está diferente do **className** que é gerado no lado do front. Na prática ao executar o app o mesmo funciona normalmente, mas quando no código é feita alguma alteração e salvo isso, o app perde as propriedades CSS, ficando só o HTML, e a mensagem citada aparece no console. Para resolver isso, a solução inicial encontrada foi parar o app e executar novamente. Como esse processo não é muito prático, foi descoberto uma solução através desse [Link](https://github.com/vercel/next.js/issues/11600#issuecomment-745165507). Com isso deve-se seguir os seguintes passos:
 
 1 - Instalar o seguinte pluguin
 ```bash
@@ -135,11 +135,11 @@ export default class MyDocument extends Document {
   }
 }
 ```
-Feito esses 3 passos ao executar o app a mensagem de Warnning e perda do CSS no app será resolvida.
+Feito esses 3 passos, ao executar o projeto a mensagem de Warnning e perda do CSS no app será resolvida.
 
 ## :clock1::warning: Automatizando a correção do problema
 
-Uma outra maneira que se encontrou para resolver isso, foi criar o projeto já configurado com um template para o uso com styled-components. Fazendo isso os 3 passos citados para ser feito no sub item anterior já vem configurado no projeto, não sendo necessário executa-lo. Para isso execute o seguinte comando para criar o projeto:
+Uma outra maneira que se encontrou para resolver isso, foi criar o projeto já configurado com um template para o uso com **styled-components**. Fazendo isso, os 3 passos citados para ser feito no sub item anterior já vem configurado no projeto, não sendo necessário executa-lo. Para isso execute o seguinte comando para criar o projeto:
 
 ```bash
 npx create-next-app --example with-styled-components
